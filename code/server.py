@@ -150,9 +150,7 @@ def get_datachart6():
             dict_d[item[0]] = item[1]
         data.append(dict_d)
 
-    return jsonify(data)  # Return the data as JSON
+    return jsonify(data)
 
-# Conditional to run the app
 if __name__ == '__main__':
-    app.run(debug=True)  # Run the app with debug mode on
-
+    app.run(debug=False, host='0.0.0.0')
