@@ -1,0 +1,1 @@
+SELECT Month, SUM(Profit) FROM Company GROUP BY Month ORDER BY CAST(SUBSTR(Month, INSTR(Month, ' ') + 1) AS INTEGER)
